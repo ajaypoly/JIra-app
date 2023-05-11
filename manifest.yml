@@ -1,0 +1,15 @@
+modules:
+  jira:globalPage:
+    - key: hello-world-page
+      resource: main
+      resolver:
+        function: resolver
+      title: Hello world
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/fa55579c-3e43-42e9-8011-9a1e502ec232
